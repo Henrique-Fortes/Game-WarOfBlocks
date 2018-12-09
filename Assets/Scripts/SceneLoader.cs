@@ -15,6 +15,7 @@ public class SceneLoader : MonoBehaviour {
     {       
         //Carrega a cena de começo do jogo "StartScene"
         SceneManager.LoadScene(0);
+        FindObjectOfType<GameSession>().ResetGame(); //chamando o metodo ResetGame, localizado em GameStatus (Para zerar a pontuação)
     }
 
     public void QuitGame()
